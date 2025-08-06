@@ -1,0 +1,1 @@
+// Dummy file for google_mlkit_commons

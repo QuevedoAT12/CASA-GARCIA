@@ -1,0 +1,14 @@
+name: google_mlkit_commons
+description: Fixed local copy of google_mlkit_commons with namespace support.
+version: 0.5.0
+homepage: https://pub.dev/packages/google_mlkit_commons
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.google.mlkit_commons
+        pluginClass: GoogleMlKitCommonsPlugin

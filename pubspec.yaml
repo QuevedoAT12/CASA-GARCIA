@@ -1,0 +1,60 @@
+name: casa_garcia
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0 # Considera actualizar a ^6.1.2 o la última estable
+  shared_preferences: ^2.0.0 # o la última versión
+  # ... otras dependencias
+
+  # --- Firebase SDKs ---
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+  firebase_storage: ^11.7.7
+
+  # Opcional: si prefieres Realtime Database en lugar de Firestore
+  # firebase_database: ^10.5.8
+
+  # --- Google Sign-In ---
+  google_sign_in: ^6.2.1
+
+  # --- Dependencias de procesamiento de imágenes y utilidades ---
+  image_picker: ^1.0.7 # Para seleccionar/tomar la imagen
+  image: ^4.1.7        # <--- AÑADIDO: Para manipular/redimensionar la imagen (o la última versión estable)
+
+  google_mlkit_text_recognition: ^0.11.0 # Considera actualizar a ^0.12.0 o la última estable
+  intl: ^0.19.0
+  path_provider: ^2.1.2 # Considera actualizar a ^2.1.3 o la última estable
+  path: ^1.9.0
+
+  # --- Iconos ---
+  cupertino_icons: ^1.0.8 # Considera actualizar a ^1.0.6 (parece que 1.0.8 no existe, 1.0.6 es la más reciente estable)
+
+    # --- Cámara ---
+    # camera: ^0.10.5+9 # Ya tienes image_picker, camera es para un control más directo.
+    # Si usas image_picker para tomar fotos, esta podría ser redundante
+    # a menos que tengas casos de uso específicos para la API de Camera.
+    # Si no la usas activamente, puedes comentarla o eliminarla.
+  # Si la versión 0.10.5+9 te da problemas, revisa la última estable como ^0.10.6+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Considera actualizar a ^4.0.0 o la última estable
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    # - assets/images/casagarcia.jpeg
+    # - assets/images/ticket_demo.jpg
+    # - assets/icons/google_icon.svg
